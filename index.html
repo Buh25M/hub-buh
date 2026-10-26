@@ -403,7 +403,7 @@ function b64ToUtf8(b64) {
 
 /* ===== Password gate ===== */
 (function () {
-  var EXPECTED = b64ToUtf8('0Y8g0LvRjtCx0LvRjiDQsdGD0YXQs9Cw0LvRgtC10YDQuNGO'); // "я люблю бухгалтерию"
+  var EXPECTED = b64ToUtf8('aSBsb3ZlIGJ1aA=='); // "i love buh"
   function norm(s) {
     return (s || '').trim().toLowerCase().replace(/ё/g, 'е').replace(/\s+/g, ' ');
   }
